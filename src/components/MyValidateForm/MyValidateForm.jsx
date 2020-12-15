@@ -13,6 +13,7 @@ const MyValidateForm = ({ handleSubmit }) => {
 
         if (validateEmail(email)) {
             setIsError(false)
+            // console.log('correct')
             handleSubmit(email)
         } else {
             setIsError(true)
