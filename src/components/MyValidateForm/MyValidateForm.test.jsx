@@ -23,7 +23,7 @@ describe('MyValidateForm', () => {
             fireEvent.submit(getByText('Submit'))
         })
 
-        expect(mocksubmit).tohavebeencalledwith('nook@gmail.com')
+        expect(mockSubmit).toHaveBeenCalledWith('nook@gmail.com')
         expect(mockSubmit).toHaveBeenCalledTimes(1)
     })
 
