@@ -4,7 +4,6 @@ import usePrimeNumber from './usePrimeNumber'
 describe('usePrimeNumber', () => {
     it('fully return;', () => {
         const { result } = renderHook(usePrimeNumber)
-        console.log(result.current)
         expect(result.current).toEqual([
             expect.any(Boolean),
             expect.any(Function),
